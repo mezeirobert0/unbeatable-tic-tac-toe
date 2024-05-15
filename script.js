@@ -46,40 +46,39 @@ function put8() {
     document.getElementById("space-8").innerHTML = '<img src="icons/o.svg">'
 }
 
-class State {
-    constructor() {
+let State = function() {
 
-        // initializing an empty board
-        this.board = [0, 0, 0,
-            0, 0, 0,
-            0, 0, 0];
+    // initializing an empty board
+    this.board = [0, 0, 0,
+                  0, 0, 0,
+                  0, 0, 0];
 
-        // X makes the first move
-        this.turn = 'x';
+    // X makes the first move
+    this.turn = 'x';
 
-        // the state can be imagined as being part of the game tree;
-        // the depth represents essentially the number of total moves
-        this.depth = 0;
+    // the state can be imagined as being part of the game tree;
+    // the depth represents essentially the number of total moves
+    this.depth = 0;
 
-        // result can be:
-        // 'x' if X has won
-        // 'o' if O has won
-        // 'draw'
-        // 'none' if no one has won yet, nor is it a draw
-        this.result = 'none';
-    }
+    // result can be:
+    // 'x' if X has won
+    // 'o' if O has won
+    // 'draw'
+    // 'none' if no one has won yet, nor is it a draw
+    this.result = 'none';
 
     // function to return indexes of empty spots on the board
-    getEmptySpots() {
+   this.getEmptySpots = function() {
         let emptySpots = [];
         for (let i = 0; i < 9; i++)
-            if (this.board === 0)
+            if (this.board[i] === 0)
                 emptySpots.push(i);
 
         return emptySpots;
     }
 
-    put(index) {
+    // function that applies the move and checks if someone has won or if it's a draw
+    this.put = function(index) {
         this.board[index] = turn;
         this.depth++;
 
@@ -111,7 +110,7 @@ class State {
             return;
         }
 
-        // if the function hasn't returned and if the depth is 9,
+        // if the function hasn't returned anything yet and if the depth is 9,
         // it means all spots are occupied and there is no winner,
         // so it's a draw;
         if (this.depth == 9) {
@@ -124,7 +123,7 @@ class State {
     }
 
     // minimax function to return the value of the current state
-    minimax() {
+    this.minimax = function() {
         // cases for terminal states
         if (this.result === 'x')
             return 10 - this.depth;
@@ -160,15 +159,13 @@ class State {
     }
 }
 
-class game {
-    constructor() {
-        this.currentState = new State();
-        this.playerSymbol = '\0';
-        this.botSymbol = '\0';
-    }
+let Game = function (){
+    this.currentState = new State();
+    this.playerSymbol = '\0';
+    this.botSymbol = '\0';
 
-    runGame() {
-
+    this.runGame = function() {
+        
     }
 
 }
