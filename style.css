@@ -9,6 +9,7 @@ h1 {
 
 #selection-area {
     margin: auto;
+    display: block;
 }
 
 #select-x {
@@ -65,6 +66,10 @@ td {
     width: 50px;
     height: 50px;
     transition-duration: 100ms;
+}
+
+td:disabled {
+    cursor: not-allowed;
 }
 
 #space-0 {

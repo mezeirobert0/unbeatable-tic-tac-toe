@@ -59,6 +59,31 @@
 
             <div id="message-area">
                 <p id="message"></p>
+                <p>Play again as:</p>
+                <div id="selection-area">
+                    <button type="button" id="select-x" onclick="hideSelectionArea(); showPlayArea()">
+                        <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        width="24" 
+                        height="24" 
+                        fill="currentColor" 
+                        class="x-symbol" 
+                        viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                        </svg>
+                    </button>
+                    <button type="button" id="select-o" onclick="hideSelectionArea(); showPlayArea()">
+                        <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        width="24" 
+                        height="24"
+                        fill="currentColor"
+                        class="o-symbol" 
+                        viewBox="0 0 24 24">
+                        <path d="M12 0c-6.623 0-12 5.377-12 12s5.377 12 12 12 12-5.377 12-12-5.377-12-12-12zm0 22c-5.519 0-10-4.48-10-10 0-5.519 4.481-10 10-10 5.52 0 10 4.481 10 10 0 5.52-4.48 10-10 10z"/>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
 
