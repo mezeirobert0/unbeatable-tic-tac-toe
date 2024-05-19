@@ -1,6 +1,8 @@
 #root {
     margin: auto;
     text-align: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 h1 {
@@ -45,12 +47,13 @@ h1 {
 img {
     margin: auto;
     display: block;
-    
 }
 
 #play-area {
-    margin: 10px;
+    margin: auto;
+    margin-top: 30vh;
     display: none;
+    justify-content: center;
 }
 
 #board {
@@ -117,4 +120,8 @@ td:disabled {
 #message-area {
     margin: auto;
 
+}
+
+#filled:hover {
+    background-color: white;
 }
