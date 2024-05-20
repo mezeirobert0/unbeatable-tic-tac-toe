@@ -30,7 +30,7 @@ function changeBoardAccess(access) {
 // function for displaying the move
 function putOnBoard(index) {
     var space = document.getElementById(`space-${index}`);
-    space.innerHTML = `<img src=\"icons/${game.currentState.turn}.svg\">`
+    space.innerHTML = `<img src=\"icons/${game.currentState.turn}.svg\">`;
     game.currentState.put(index);
     
     // make spot inaccessible

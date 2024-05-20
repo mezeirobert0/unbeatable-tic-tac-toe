@@ -1,68 +1,61 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Unbeatable Tic-Tac-Toe</title>
-        <link rel="stylesheet" href="style.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
 
-    <body>
-        <div id="root">
-			<h1 id="welcome-message">Welcome to Unbeatable Tic-Tac-Toe!</h1>
+<head>
+    <title>Unbeatable Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
-            <div id="selection-area">
-                <h2 id="selection-prompt"> What do you want to play as? </h2>
-                <button type="button" id="select-x">
-                    <svg 
-                    xmlns="http://www.w3.org/2000/svg" 
-                    width="24" 
-                    height="24" 
-                    fill="currentColor" 
-                    class="x-symbol" 
+<body>
+    <div id="root">
+        <h1 id="welcome-message">Welcome to Unbeatable Tic-Tac-Toe!</h1>
+
+        <div id="selection-area">
+            <h2 id="selection-prompt"> What do you want to play as? </h2>
+            <button type="button" id="select-x">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="x-symbol"
                     viewBox="0 0 16 16">
-                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
-                    </svg>
-                </button>
-                <button type="button" id="select-o">
-                    <svg 
-                    xmlns="http://www.w3.org/2000/svg" 
-                    width="24" 
-                    height="24"
-                    fill="currentColor"
-                    class="o-symbol" 
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                </svg>
+            </button>
+            <button type="button" id="select-o">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="o-symbol"
                     viewBox="0 0 24 24">
-                    <path d="M12 0c-6.623 0-12 5.377-12 12s5.377 12 12 12 12-5.377 12-12-5.377-12-12-12zm0 22c-5.519 0-10-4.48-10-10 0-5.519 4.481-10 10-10 5.52 0 10 4.481 10 10 0 5.52-4.48 10-10 10z"/>
-                    </svg>
-                </button>
-            </div>
-            
-            <div id="play-area">
-                <table id="board">
-                    <tr>
-                        <td type="button" id="space-0"></td>
-                        <td type="button" id="space-1"></td>
-                        <td type="button" id="space-2"></td>
-                    </tr>
-                    <tr>
-                        <td type="button" id="space-3"></td>
-                        <td type="button" id="space-4"></td>
-                        <td type="button" id="space-5"></td>
-                    </tr>
-                    <tr>
-                        <td type="button" id="space-6"></td>
-                        <td type="button" id="space-7"></td>
-                        <td type="button" id="space-8"></td>
-                    </tr>
-                </table>
-            </div>
-
-            <div id="message-area">
-                <h3 id="message"></h3>
-            </div>
+                    <path d="M12 0c-6.623 0-12 5.377-12 12s5.377 12 12 12 12-5.377 12-12-5.377-12-12-12zm0 22c-5.519 0-10-4.48-10-10 0-5.519 4.481-10 10-10 5.52 0 10 4.481 10 10 0 5.52-4.48 10-10 10z" />
+                </svg>
+            </button>
         </div>
 
-        <script src="script.js"></script>
-    </body>
+        <div id="play-area">
+            <table id="board">
+                <tr>
+                    <td type="button" id="space-0"></td>
+                    <td type="button" id="space-1"></td>
+                    <td type="button" id="space-2"></td>
+                </tr>
+                <tr>
+                    <td type="button" id="space-3"></td>
+                    <td type="button" id="space-4"></td>
+                    <td type="button" id="space-5"></td>
+                </tr>
+                <tr>
+                    <td type="button" id="space-6"></td>
+                    <td type="button" id="space-7"></td>
+                    <td type="button" id="space-8"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="message-area">
+            <h3 id="message"></h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
 </html>

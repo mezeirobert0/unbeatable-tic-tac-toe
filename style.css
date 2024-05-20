@@ -51,7 +51,7 @@ img {
 
 #play-area {
     margin: auto;
-    margin-top: 30vh;
+    margin-top: 20vh;
     display: none;
     justify-content: center;
 }
@@ -119,9 +119,4 @@ td:disabled {
 
 #message-area {
     margin: auto;
-
-}
-
-#filled:hover {
-    background-color: white;
 }
