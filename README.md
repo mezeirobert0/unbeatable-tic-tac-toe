@@ -4,7 +4,7 @@ Written in HTML, CSS and vanilla Javascript
 
 ## Installation
 
-If you have Git installed, open the terminal, navigate to the desired location of the project using `cd` and clone the repository using the following command:
+If you have Git installed, clone the repository using the following command:
 ```bash
 git clone https://github.com/mezeirobert0/unbeatable-tic-tac-toe.git
 ```
